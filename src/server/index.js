@@ -33,13 +33,16 @@ app.get('/', (req, res) => {
 
         <script src="/jspm_packages/system.js"></script>
         <script src="/config.js"></script>
+        <script src="/dist/client/index.js"></script>
         <script>
           System.import('/src/client/index');
         </script>
       </body>
     </html>
   `;
+
   res.end(html);
+
   }).catch((error) => {
     setTimeout(() => {
       throw error;
