@@ -7,12 +7,17 @@ import Title from '../Title/Title';
 import './Card.css!';
 
 class CardComponent extends React.Component {
+  handleClick() {
+    console.log('clicked');
+  }
+
   render() {
     return (
       <div className="card">
         <Title title={this.props.title} />
         <div className="card__content">
           <p>I am a very simple card.</p>
+          <button onClick={this.handleClick}>Click me</button>
         </div>
       </div>
     );
