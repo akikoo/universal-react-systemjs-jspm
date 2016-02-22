@@ -1,5 +1,4 @@
-var path = require('path');
-var Builder = require('systemjs-builder');
+var Builder = require('jspm').Builder;
 
 var builder = new Builder(
   './',         // baseURL
@@ -7,10 +6,10 @@ var builder = new Builder(
 );
 
 builder.bundle('./src/shared/components/Card/Card.js', './src/client/dist.js', {
-	minify: false,
-	sourceMaps: true
+  minify: false,
+  sourceMaps: true
 }).then(function () {
-	console.log('Build complete');
+  console.log('Build complete');
 }).catch(function (err) {
-	console.log('Build error: ', err);
+  console.log('Build error: ', err);
 });
