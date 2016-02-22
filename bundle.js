@@ -1,11 +1,13 @@
-var Builder = require('jspm').Builder;
+var jspm = require('jspm');
+var builder = new jspm.Builder();
 
-var builder = new Builder(
-  './',         // baseURL
-  './config.js' // configuration file
-);
+builder.config({
+  separateCSS: false,
+  buildCSS: true
+});
 
-builder.bundle('./src/shared/components/Card/Card.js', './src/client/dist.js', {
+// or builder.buildStatic
+builder.bundle('./src/client/index.js', './dist/client/index.js', {
   minify: false,
   sourceMaps: true
 }).then(function () {
