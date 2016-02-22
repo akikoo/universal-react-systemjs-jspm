@@ -6,7 +6,7 @@ import Title from '../Title/Title';
 
 import './Card.css!';
 
-class CardComponent extends React.Component {
+class Card extends React.Component {
   handleClick() {
     console.log('clicked');
   }
@@ -24,4 +24,4 @@ class CardComponent extends React.Component {
   }
 }
 
-export default CardComponent;
+export default Card;
