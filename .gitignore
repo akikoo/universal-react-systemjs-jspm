@@ -4,3 +4,4 @@ jspm_packages
 npm-debug.log
 npm-debug.log.*
 src/client/dist.*
+dist*
