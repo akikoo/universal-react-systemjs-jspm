@@ -1,11 +1,6 @@
 var jspm = require('jspm');
 var builder = new jspm.Builder();
 
-builder.config({
-  separateCSS: false,
-  buildCSS: true
-});
-
 // or builder.buildStatic
 builder.bundle('./src/client/index.js', './dist/client/index.js', {
   minify: false,
