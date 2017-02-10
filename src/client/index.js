@@ -1,11 +1,11 @@
-'use strict';
-
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import Card from '../shared/components/Card/Card';
 
-export default ReactDOM.render(
-  <Card title="Hello" />,
-  document.getElementById('app')
-);
+class IndexPage extends React.Component {
+  render() {
+    return <Card title="Hello" />;
+  }
+}
+
+export default IndexPage;

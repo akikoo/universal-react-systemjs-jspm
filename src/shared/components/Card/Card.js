@@ -1,10 +1,7 @@
-'use strict';
-
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Title from '../Title/Title';
-
 import './Card.css!';
+
+import Title from '../Title/Title';
 
 class Card extends React.Component {
   handleClick() {
