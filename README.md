@@ -2,6 +2,8 @@
 
 This is a basic example of using SystemJS in the browser and in node, to set up Universal React with Babel and SystemJS/jspm.
 
+For sample browser project setup (no universal rendering) with jspm and SystemJS and Sass, you might want to take a look at https://github.com/akikoo/systemjs-jspm-sass-setup.
+
 ## Environment setup 
 
 ```sh
