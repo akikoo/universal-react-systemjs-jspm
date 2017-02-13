@@ -8,6 +8,7 @@ const app = express();
 // Set static assets root
 app.use('/jspm_packages', express.static('jspm_packages'));
 app.use('/src', express.static('src'));
+app.use('/dist', express.static('dist'));
 app.use('/jspm.config.js', express.static('jspm.config.js'));
 
 app.get('/', (req, res) => {
