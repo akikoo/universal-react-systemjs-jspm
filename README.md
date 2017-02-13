@@ -19,10 +19,22 @@ $ npm start
 
 Then go to [http://localhost:3000](http://localhost:3000).
 
-## Bundle assets
+## Bundle assets for development
 
 ```sh
-$ npm run bundle
+$ npm run bundle-dev
+```
+    
+## Bundle assets for production
+
+```sh
+$ npm run bundle-min
+```
+
+## Unbundle assets
+
+```sh
+$ npm run unbundle
 ```
 
 ## Credits/inspiration
